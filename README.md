@@ -6,9 +6,11 @@
 PYTHONPATH=$PYTHONPATH:. uv run pytest
 ```
 
-## run without uv
+## without uv run
 
 ```bash
+uv sync
 . .venv/bin/activate
 python -m pytest tests
+deactivate
 ```
